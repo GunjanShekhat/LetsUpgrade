@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 4 Assignment Q-2</title>
+</head>
+<body>
+
+	<input type="text" id="tv1" placeholder="TextBox 1"><br>
+	<input type="text" id="tv2" placeholder="TextBox 2"><br>
+	<button id="btn" onclick="cpy()">Enter</button>
+
+	<script type="text/javascript">
+		function cpy(){
+			const t1 = document.getElementById("tv1");
+			let txt = t1.value;
+			const t2 = document.getElementById("tv2");
+			t2.value = txt;
+
+		}
+	</script>
+
+
+</body>
+</html>
