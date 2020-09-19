@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 6 Assignment</title>
+	<style type="text/css">
+		div{
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<center><h1>Tours & Travels</h1></center>
+	</div>
+
+	<div>
+		<form onsubmit="add_bus(event)" id="frm1">
+			<input type="text" id="nm" placeholder="Name">
+			<input type="text" id="srce" placeholder="Source">
+			<input type="text" id="dest" placeholder="Destination">
+			<input type="Number" id="nmbr" placeholder="Number">
+			<input type="Number" id="p_cap" placeholder="Passenger Capacity">
+			<button type="submit">Add Bus</button>
+		</form>
+	</div>
+
+	<div>
+		<table border="2" width="100%" cellspacing="0">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Source</th>
+					<th>Destination</th>
+					<th>Number</th>
+					<th>Passenger Capacity</th>
+				</tr>
+			</thead>
+			<tbody id="table_body">
+				
+			</tbody>
+			
+		</table>
+	</div>
+
+	<div>
+		<input type="text" placeholder="Search by Source/Destination" id="search_in" onkeyup="srch()">
+	</div>
+
+	<div>
+		
+	</div>
+
+	<script src="Day_6_Q2.js"></script>
+</body>
+</html>
